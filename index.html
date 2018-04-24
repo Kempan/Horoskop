@@ -125,8 +125,6 @@
                     success: function(results){
                         if(results = true){
                             viewHoroscope();
-                        } else { 
-                            $(".content").html(results);
                         }
                     }
                 });
@@ -145,8 +143,6 @@
                     success: function(results){
                         if(results = true){
                             viewHoroscope();
-                        } else {
-                            $(".content").html(results);
                         }
                     }
                 }); 
@@ -164,7 +160,7 @@
                     },
                     success: function(results){
                         if(results = true){
-                            $(".content").empty();
+                            viewHoroscope();
                         }
                     }
                 });   
